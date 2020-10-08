@@ -163,7 +163,7 @@ GPIO_PORTE_DEN_R|= 0x0F;// pins 3-0 as digital pins
 GPIO_PORTE_ODR_R|= 0x0F; // pins 3-0 as open drain
 GPIO_PORTC_DIR_R&=~0xF0;// pin 7-4 as input */
 GPIO_PORTC_DEN_R|= 0xF0; // pin 7-4 as digital pins */
-GPIO_PORTC_PUR_R |= 0xF0; // enable pull-ups resistors
+GPIO_PORTC_PUR_R |= 0xF0; /* enable pull-ups resistors
 for pin 7-4 */
 }
 //=======keypad get char===================//
